@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Decker_Jake_Monday.Site1" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Jake Decker & Fronz</title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+        .masterheading{color:blue}
+    </style>
+</head>
+
+<body>
+    <%-- Jake Decker & Michael Fronz --%>
+    <form id="form1" runat="server">
+        <div>
+            <img src="/Image/dukedog.png" />
+            <header><h1 class = "masterheading">DukeGroup Web Portal</h1></header>
+   
+             <nav>Navigation Bar:
+                 <a href="/Home.aspx/">Home</a>
+                 <a href="/StudentPage.aspx/">Student</a>
+                 <a href="/MemberPage.aspx/">Member</a>
+                 <a href="/ScholarshipPage.aspx/">Scholarship</a>
+            </nav>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+    </form>
+   
+</body>
+</html>
+
